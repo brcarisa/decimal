@@ -11,10 +11,10 @@
 
 | Operator name | Operators  | Function                                                                           | 
 | ------ | ------ |------------------------------------------------------------------------------------|
-| Addition | + | int add(decimal value_1, s21_decimal value_2, decimal *result)         |
-| Subtraction | - | int sub(s21_decimal value_1, s21_decimal value_2, s21_decimal *result) |
-| Multiplication | * | int s21_mul(s21_decimal value_1, s21_decimal value_2, s21_decimal *result) | 
-| Division | / | int s21_div(s21_decimal value_1, s21_decimal value_2, s21_decimal *result) |
+| Addition | + | int add(decimal value_1, decimal value_2, decimal *result)         |
+| Subtraction | - | int sub(decimal value_1, decimal value_2, decimal *result) |
+| Multiplication | * | int s21_mul(decimal value_1, decimal value_2, decimal *result) | 
+| Division | / | int s21_div(decimal value_1, decimal value_2, decimal *result) |
 
 The functions return the error code:
 - 0 - OK
@@ -29,12 +29,12 @@ The functions return the error code:
 
 | Operator name | Operators  | Function | 
 | ------ | ------ | ------ |
-| Less than | < | int s21_is_less(s21_decimal, s21_decimal) |
-| Less than or equal to | <= | int s21_is_less_or_equal(s21_decimal, s21_decimal) | 
-| Greater than | > |  int s21_is_greater(s21_decimal, s21_decimal) |
-| Greater than or equal to | >= | int s21_is_greater_or_equal(s21_decimal, s21_decimal) | 
-| Equal to | == |  int s21_is_equal(s21_decimal, s21_decimal) |
-| Not equal to | != |  int s21_is_not_equal(s21_decimal, s21_decimal) |
+| Less than | < | int s21_is_less(decimal, decimal) |
+| Less than or equal to | <= | int s21_is_less_or_equal(decimal, decimal) | 
+| Greater than | > |  int s21_is_greater(decimal, decimal) |
+| Greater than or equal to | >= | int s21_is_greater_or_equal(decimal, decimal) | 
+| Equal to | == |  int s21_is_equal(decimal, decimal) |
+| Not equal to | != |  int s21_is_not_equal(decimal, decimal) |
 
 Return value:
 - 0 - FALSE
